@@ -172,26 +172,3 @@ Harvesterを使い始める準備はできましたか？以下のページで�
 * `INSTALL.rst`_：Harvesterとその前提条件のインストール方法を学びます。
 * `TUTORIAL.rst`_：典型的な画像取得ワークフローでHarvesterを使用する方法を学びます。
 
-オープンソースリソース
-======================
-
-Harvesterは以下のオープンソースライブラリ/リソースを使用しています：
-
-* Pympler
-  | ライセンス：`Apache License, Version 2.0`_
-  | 著作権 (c) Jean Brouwers, Ludwig Haehne, Robert Schuppenies
-  | https://pythonhosted.org/Pympler/
-  | https://github.com/pympler/pympler
-  | https://pypi.org/project/Pympler/
-
-* Versioneer
-  | ライセンス：`The Creative Commons "Public Domain Dedication" license (CC0-1.0)`_
-  | 著作権 (c) 2018 Brian Warner
-  | https://github.com/warner/python-versioneer
-
-謝辞
-====
-
-以下の個人は、Harvesterの開発活動に直接的または間接的に貢献しています。彼らは本当に素晴らしいGenICamの同僚です：
-
-Rod Barman, Stefan Battmer, David Beek, Jan Becvar, David Bernecker, Chris Beynon, Eric Bourbonnais, Benedikt Busch, George Chamberlain, Thomas Detjen, Friedrich Dierks, Dana Diezemann, Emile Dodin, Reynold Dodson, Sascha Dorenbeck, Jozsa Elod, Erik Eloff, Katie Ensign, Andreas Ertl, James Falconer, Werner Feith, Maciej Gara, Andreas Gau, Sebastien Gendreau, Francois Gobeil, Werner Goeman, Jean-Paul Goglio, Markus Grebing, Eric Gross, Ioannis Hadjicharalambous, Uwe Hagmaier, Tim Handschack, Christopher Hartmann, Reinhard Heister, Gerhard Helfrich, Jochem Herrmann, Heiko Hirschmueller, Tom Hopfner, David Hoese, Karsten Ingeman Christensen, Severi Jaaskelainen, Alfred Johannesson, Mattias Johannesson, Mark Jones, Mattias Josefsson, Martin Kersting, Stephan Kieneke, Tom Kirchner, Lutz Koschorreck, Frank Krehl, Maarten Kuijk, Max Larin, Ralf Lay, Min Liu, Sergey Loginonvskikh, Thomas Lueck, Alain Marchand, Rocco Matano, Masahide Matsubara, Stephane Maurice, Robert McCurrach, Mike Miethig, Thies Moeller, Roman Moie, Katsura Muramatsu, Silvan Murer, Marcel Naggatz, Hartmut Nebelung, Damian Nesbitt, Quang Nhan Nguyen, Klaus-Henning Noffz, Jonas Olofsson, Neerav Patel, Jan Pech, Merlin Plock, Joerg Preckwinkel, Benjamin Pussacq, Dave Reaves, Thomas Reuter, Gordon Rice, Andreas Rittinger, Ryan Robe, Nicolas P. Rougier, Felix Ruess, Matthias Schaffland, Michael Schmidt, Jan Scholze, Martin Schwarzbauer, Rupert Stelz, Madhura Suresh, Chendra Hadi Suryanto, Andrew Wei Chuen Tan, Timo Teifel, Albert Theuwissen, Laval Tremblay, Tim Vlaar, Silvio Voitzsch, Stefan Von Weihe, Frederik Voncken, Roman Wagner, Ansger Waschki, Anne Wendel, Michael Williamson, Jean-Michel Wintgens, Manfred Wuetschner, Jang Xu, Christoph Zierl, Sebastian Yap, and Juraj Zopp
