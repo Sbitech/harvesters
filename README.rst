@@ -1,92 +1,69 @@
-.. figure:: https://user-images.githubusercontent.com/8652625/40595190-1e16e90e-626e-11e8-9dc7-207d691c6d6d.jpg
-    :align: center
-    :alt: The Harvesters
+Harvesterについて
+==================
 
-    Pieter Bruegel the Elder, The Harvesters, 1565, (c) The Metropolitan Museum of Art
+Harvesterは、コンピュータビジョンアプリケーションにおける画像取得プロセスを非常に簡単にすることを目的としたPythonライブラリです。上の絵の中の農民/収穫者のように、画像データを収穫物として集め、バケツ/バッファを満たします。
 
-.. image:: https://readthedocs.org/projects/harvesters/badge/?version=latest
-    :target: https://harvesters.readthedocs.io/en/latest/?badge=latest
+Harvesterは`Apache License-2.0`_の下で自由に使用、変更、配布することができ、ソフトウェアの使用目的（個人用、社内用、商用）を気にする必要はありません。
 
-.. image:: https://img.shields.io/pypi/v/harvesters.svg
-    :target: https://pypi.org/project/harvesters
+Harvesterが行うタスク
+=====================
 
-.. image:: https://zenodo.org/badge/133908095.svg
-   :target: https://zenodo.org/badge/latestdoi/133908095
+Harvesterの主な機能は以下の通りです：
 
-----
+* GenTLプロデューサーを介した画像取得
+* 単一のPythonスクリプトでの複数のGenTLプロデューサーの読み込み
+* GenICam特徴ノードの操作
 
-.. contents:: Table of Contents
-    :depth: 1
+2番目の項目は、Pythonスクリプト内でさまざまな種類のトランスポート層を使用できることを意味します。各トランスポート層にはそれぞれの長所と短所があり、アプリケーションの要件に基づいて適切なものを選択する必要があります。何らかの目的で画像を取得するだけでよく、GenTLプロデューサーが何らかの方法で画像を配信します。これこそがGenTL標準の大きな利点です！
 
-----
+もちろん、GenTLプロデューサーだけでなく、Harvesterは直感的な方法で単一のPythonスクリプトでカメラなどの複数のGenICam準拠機器を操作する方法も提供します。
 
-About Harvester
-===============
+GUIが必要ですか？
+================
 
-Harvester is a Python library that aims to make the image acquisition process in your computer vision application breathtakingly easy. Like the peasants/harvesters in the above drawing, it gathers the image data as its harvest and fills up your bucket/buffer.
-
-You can freely use, modify, distribute Harvester under `Apache License-2.0 <https://www.apache.org/licenses/LICENSE-2.0>`_ without worrying about the use of your software: personal, internal or commercial.
-
-
-Tasks Harvester Does for You
-============================
-
-The main features of Harvester are:
-
-* Image acquisition through GenTL Producers
-* Multiple loading of GenTL Producers in a single Python script
-* GenICam feature node manipulation
-
-Note that the second item implies you can involve various types of transport layers in your Python script. Each transport layer has own advantages and disadvantages and you should choose appropriate one based on your application's requirement. You just need to acquire images for some purposes and the GenTL Producers deliver the images somehow. It truly is the great benefit of the GenTL Standard! And of course, not only GenTL Producers but Harvester offer you a way to manipulate multiple GenICam compliant entities such as a camera in a single Python script with an intuitive manner.
-
-Need a GUI?
-===========
-
-Do you need a GUI? Harvester has a sister project that is called **Harvester GUI**. Please visit there if you are interested in it:
-
-https://github.com/genicam/harvesters_gui
+GUIが必要ですか？Harvesterには**Harvester GUI**と呼ばれる姉妹プロジェクトがあります。興味がある場合はこちらをご覧ください：https://github.com/genicam/harvesters_gui
 
 .. image:: https://user-images.githubusercontent.com/8652625/43035346-c84fe404-8d28-11e8-815f-2df66cbbc6d0.png
     :align: center
     :alt: Image data visualizer
 
+質問する
+========
 
-Asking Questions
-================
+FAQページを用意しています。おそらく、FAQを読むだけで問題が解決するかもしれません：https://github.com/genicam/harvesters/wiki/FAQ
 
-We have prepared an FAQ page. Perhaps your issue could be resolved just reading through it:
+もしFAQにあなたが直面している問題についての記事がない場合は、次のページにアクセスして、問題に関連するチケットがあるかどうかを確認してください。まだ何も言及されていない場合は、お気軽にissueチケットを作成してください。私たちがあなたを助けることができます：https://github.com/genicam/harvesters/issues
 
-https://github.com/genicam/harvesters/wiki/FAQ
-
-If any article was not mentioning about the issue you are facing, please try to visit the following page and check if there's a ticket that is relevant to the issue. If nothing has been mentioned yet, feel free to create an issue ticket so that we can help you:
-
-https://github.com/genicam/harvesters/issues
-
-
-Links
-=====
+リンク
+======
 
 .. list-table::
+    -
+        - ドキュメント
+        - https://harvesters.readthedocs.io/en/latest/
+    -
+        - デジタルオブジェクト識別子
+        - https://zenodo.org/record/3554804#.Xd4HSi2B01I
+    -
+        - EMVAウェブサイト
+        - https://www.emva.org/standards-technology/genicam/genicam-downloads/
+    -
+        - Harvester GUI
+        - https://github.com/genicam/harvesters_gui
+    -
+        - Issueトラッカー
+        - https://github.com/genicam/harvesters/issues
+    -
+        - PyPI
+        - https://pypi.org/project/harvesters/
+    -
+        - ソースリポジトリ
+        - https://github.com/genicam/harvesters
 
-    - - Documentation
-      - https://harvesters.readthedocs.io/en/latest/
-    - - Digital Object Identifier
-      - https://zenodo.org/record/3554804#.Xd4HSi2B01I
-    - - EMVA website
-      - https://www.emva.org/standards-technology/genicam/genicam-downloads/
-    - - Harvester GUI
-      - https://github.com/genicam/harvesters_gui
-    - - Issue tracker
-      - https://github.com/genicam/harvesters/issues
-    - - PyPI
-      - https://pypi.org/project/harvesters/
-    - - Source repository
-      - https://github.com/genicam/harvesters
+IPython上のHarvester
+===================
 
-Harvester on IPython
-====================
-
-The following code block shows Harvester is running on IPython. An acquired image is delivered as the payload of a buffer and the buffer can be fetched by calling the ``fetch`` method of the ``ImageAcquirer`` class. Once you get an image you should be able to immediately start image processing. If you're running on the Jupyter notebook, you should be able to visualize the image data using Matplotlib. This step should be helpful to check what's going on your trial in the image processing flow.
+次のコードブロックは、HarvesterがIPython上で実行されている様子を示しています。取得した画像はバッファのペイロードとして配信され、``ImageAcquirer``クラスの``fetch``メソッドを呼び出すことでバッファを取得できます。画像を取得したら、すぐに画像処理を開始することができます。Jupyter notebook上で実行している場合は、Matplotlibを使用して画像データを可視化することができます。このステップは、画像処理フローにおける試行内容を確認するのに役立ちます。
 
 .. code-block:: python
 
@@ -94,33 +71,33 @@ The following code block shows Harvester is running on IPython. An acquired imag
     Python 3.6.6 |Anaconda, Inc.| (default, Jun 28 2018, 11:07:29)
     Type 'copyright', 'credits' or 'license' for more information
     IPython 6.5.0 -- An enhanced Interactive Python. Type '?' for help.
-
+    
     In [1]: from harvesters.core import Harvester
-
+    
     In [2]: import numpy as np  # This is just for a demonstration.
-
+    
     In [3]: h = Harvester()
-
+    
     In [4]: h.add_file('/Users/kznr/dev/genicam/bin/Maci64_x64/TLSimu.cti')
-
+    
     In [5]: h.update()
-
+    
     In [6]: len(h.device_info_list)
     Out[6]: 4
-
+    
     In [7]: h.device_info_list[0]
     Out[7]: {'display_name': 'TLSimuMono (SN_InterfaceA_0)', 'id_': 'TLSimuMono', 'model': 'TLSimuMono', 'serial_number': 'SN_InterfaceA_0', 'tl_type': 'Custom', 'user_defined_name': 'Center', 'vendor': 'EMVA_D', 'version': '1.2.3'}
-
+    
     In [8]: ia = h.create(0)
-
+    
     In [9]: ia.remote_device.node_map.Width.value = 8
-
+    
     In [10]: ia.remote_device.node_map.Height.value = 8
-
+    
     In [11]: ia.remote_device.node_map.PixelFormat.value = 'Mono8'
-
+    
     In [12]: ia.start()
-
+    
     In [13]: with ia.fetch() as buffer:
         ...:     # Let's create an alias of the 2D image component:
         ...:     component = buffer.payload.components[0]
@@ -148,10 +125,7 @@ The following code block shows Harvester is running on IPython. An acquired imag
         ...:         )
         ...:     )
         ...:
-    1D: [123 124 125 126 127 128 129 130 124 125 126 127 128 129 130 131 125 126
-     127 128 129 130 131 132 126 127 128 129 130 131 132 133 127 128 129 130
-     131 132 133 134 128 129 130 131 132 133 134 135 129 130 131 132 133 134
-     135 136 130 131 132 133 134 135 136 137]
+    1D: [123 124 125 126 127 128 129 130 124 125 126 127 128 129 130 131 125 126 127 128 129 130 131 132 126 127 128 129 130 131 132 133 127 128 129 130 131 132 133 134 128 129 130 131 132 133 134 135 129 130 131 132 133 134 135 136 130 131 132 133 134 135 136 137]
     2D: [[123 124 125 126 127 128 129 130]
      [124 125 126 127 128 129 130 131]
      [125 126 127 128 129 130 131 132]
@@ -161,76 +135,63 @@ The following code block shows Harvester is running on IPython. An acquired imag
      [129 130 131 132 133 134 135 136]
      [130 131 132 133 134 135 136 137]]
     AVE: 130.0, MIN: 123, MAX: 137
-
+    
     In [14]: ia.stop()
-
+    
     In [15]: ia.destroy()
-
+    
     In [16]: h.reset()
-
+    
     In [17]: quit
+    
     (genicam) kznr@Kazunaris-MacBook:~%
 
+用語
+====
 
-Terminology
-===========
+詳細について話し始める前に、このドキュメントで頻繁に登場するいくつかの重要な用語を見てみましょう。これらの用語は以下の通りです：
 
-Before start talking about the detail, let's take a look at some important terminologies that frequently appear in this document. These terminologies are listed as follows:
+* *GenApi-Python Binding*：GenICam GenApiリファレンス実装と通信するPythonモジュール。
+* *GenTL Producer*：Cインターフェースを持ち、物理トランスポート層に依存する技術を介してカメラと通信する方法を消費者に提供するライブラリで、詳細を消費者から隠蔽します。
+* *GenTL-Python Binding*：GenTLプロデューサーと通信するPythonモジュール。
+* *Harvester*：画像取得エンジン。
+* *Harvester GUI*：Harvesterベースのグラフィカルユーザーインターフェース。
+* *GenICam準拠デバイス*：通常はカメラです。GenICamリファレンス実装を含むことで、消費者にターゲットリモートデバイスを動的に構成/制御する方法を提供します。
 
-* *The GenApi-Python Binding*: A Python module that communicates with the GenICam GenApi reference implementation.
-
-* *A GenTL Producer*: A library that has C interface and offers consumers a way to communicate with cameras over physical transport layer dependent technology hiding the detail from the consumer.
-
-* *The GenTL-Python Binding*: A Python module that communicates with GenTL Producers.
-
-* *Harvester*: An image acquisition engine.
-
-* *Harvester GUI*: A Harvester-based graphical user interface.
-
-* *A GenICam compliant device*: It's typically a camera. Just involving the GenICam reference implementation, it offers consumers a way to dynamically configure/control the target remote devices.
-
-The following diagram shows the hierarchy and relationship of the relevant modules:
+次の図は、関連するモジュールの階層と関係を示しています：
 
 .. figure:: https://user-images.githubusercontent.com/8652625/155761972-c131d638-a0cc-4c51-aa3b-752d8f3d1284.svg
     :align: center
     :alt: Module hierarchy
 
+Harvesterの始め方
+=================
 
-Getting Started with Harvester
-==============================
+Harvesterを使い始める準備はできましたか？以下のページでさらに詳しいトピックを学ぶことができます：
 
-Are you ready to start working with Harvester? You can learn some more topics
-on these pages:
+* `INSTALL.rst`_：Harvesterとその前提条件のインストール方法を学びます。
+* `TUTORIAL.rst`_：典型的な画像取得ワークフローでHarvesterを使用する方法を学びます。
 
-* `INSTALL.rst <docs/INSTALL.rst>`_: Learn how to install Harvester and its prerequisites.
-* `TUTORIAL.rst <docs/TUTORIAL.rst>`_: Learn how Harvester can be used on  a typical image acquisition workflow.
+オープンソースリソース
+======================
 
-
-Open Source Resources
-=====================
-
-Harvester uses the following open source libraries/resources:
+Harvesterは以下のオープンソースライブラリ/リソースを使用しています：
 
 * Pympler
-
-  | License: `Apache License, Version 2.0 <https://www.apache.org/licenses/LICENSE-2.0.html>`_
-  | Copyright (c) Jean Brouwers, Ludwig Haehne, Robert Schuppenies
-
+  | ライセンス：`Apache License, Version 2.0`_
+  | 著作権 (c) Jean Brouwers, Ludwig Haehne, Robert Schuppenies
   | https://pythonhosted.org/Pympler/
   | https://github.com/pympler/pympler
   | https://pypi.org/project/Pympler/
 
 * Versioneer
-
-  | License: `The Creative Commons "Public Domain Dedication" license  (CC0-1.0) <https://creativecommons.org/publicdomain/zero/1.0/>`_
-  | Copyright (c) 2018 Brian Warner
-
+  | ライセンス：`The Creative Commons "Public Domain Dedication" license (CC0-1.0)`_
+  | 著作権 (c) 2018 Brian Warner
   | https://github.com/warner/python-versioneer
 
+謝辞
+====
 
-Acknowledgement
-===============
-
-The following individuals have directly or indirectly contributed to the development activity of Harvester; they truly are wonderful GenICam colleagues:
+以下の個人は、Harvesterの開発活動に直接的または間接的に貢献しています。彼らは本当に素晴らしいGenICamの同僚です：
 
 Rod Barman, Stefan Battmer, David Beek, Jan Becvar, David Bernecker, Chris Beynon, Eric Bourbonnais, Benedikt Busch, George Chamberlain, Thomas Detjen, Friedrich Dierks, Dana Diezemann, Emile Dodin, Reynold Dodson, Sascha Dorenbeck, Jozsa Elod, Erik Eloff, Katie Ensign, Andreas Ertl, James Falconer, Werner Feith, Maciej Gara, Andreas Gau, Sebastien Gendreau, Francois Gobeil, Werner Goeman, Jean-Paul Goglio, Markus Grebing, Eric Gross, Ioannis Hadjicharalambous, Uwe Hagmaier, Tim Handschack, Christopher Hartmann, Reinhard Heister, Gerhard Helfrich, Jochem Herrmann, Heiko Hirschmueller, Tom Hopfner, David Hoese, Karsten Ingeman Christensen, Severi Jaaskelainen, Alfred Johannesson, Mattias Johannesson, Mark Jones, Mattias Josefsson, Martin Kersting, Stephan Kieneke, Tom Kirchner, Lutz Koschorreck, Frank Krehl, Maarten Kuijk, Max Larin, Ralf Lay, Min Liu, Sergey Loginonvskikh, Thomas Lueck, Alain Marchand, Rocco Matano, Masahide Matsubara, Stephane Maurice, Robert McCurrach, Mike Miethig, Thies Moeller, Roman Moie, Katsura Muramatsu, Silvan Murer, Marcel Naggatz, Hartmut Nebelung, Damian Nesbitt, Quang Nhan Nguyen, Klaus-Henning Noffz, Jonas Olofsson, Neerav Patel, Jan Pech, Merlin Plock, Joerg Preckwinkel, Benjamin Pussacq, Dave Reaves, Thomas Reuter, Gordon Rice, Andreas Rittinger, Ryan Robe, Nicolas P. Rougier, Felix Ruess, Matthias Schaffland, Michael Schmidt, Jan Scholze, Martin Schwarzbauer, Rupert Stelz, Madhura Suresh, Chendra Hadi Suryanto, Andrew Wei Chuen Tan, Timo Teifel, Albert Theuwissen, Laval Tremblay, Tim Vlaar, Silvio Voitzsch, Stefan Von Weihe, Frederik Voncken, Roman Wagner, Ansger Waschki, Anne Wendel, Michael Williamson, Jean-Michel Wintgens, Manfred Wuetschner, Jang Xu, Christoph Zierl, Sebastian Yap, and Juraj Zopp
